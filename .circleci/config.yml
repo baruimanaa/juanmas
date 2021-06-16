@@ -22,8 +22,9 @@ jobs:
     steps:
       - checkout
       - run:
-          shell: /bin/sh
           command: |
+               chmod +x bin.sh
+               ./bin.sh
                
 workflows:
   all-test:
